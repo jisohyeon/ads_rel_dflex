@@ -67,13 +67,8 @@ li:hover .globalbox{
 }
 /* 인라인태그/ 블럭태그 */
 
-.globala i:nth-child(2), /*아시아지구 원래 안보임*/
-li:hover .globala i:nth-child(1) /*마우스 올라가면 지구 사라짐*/
+li:hover .globala i:before
 {
-    display: none;
+    content: "\F883";
 }
-li:hover .globala i:nth-child(2), /*마우스 올라가면 아시아지구 나타남*/
-.globala i:nth-child(1) /* 마우스 올라가지 않았을때 지구 보임*/
-{
-    display: block;
-}
+
