@@ -63,5 +63,17 @@ li:hover .globalbox{
     display: block;
     /* 인라인태그 a라서 위아래 스타일 안먹힘 */
     padding-bottom: 10px;
+    font-size: 1.5rem;
 }
 /* 인라인태그/ 블럭태그 */
+
+.globala i:nth-child(2), /*아시아지구 원래 안보임*/
+li:hover .globala i:nth-child(1) /*마우스 올라가면 지구 사라짐*/
+{
+    display: none;
+}
+li:hover .globala i:nth-child(2), /*마우스 올라가면 아시아지구 나타남*/
+.globala i:nth-child(1) /* 마우스 올라가지 않았을때 지구 보임*/
+{
+    display: block;
+}
